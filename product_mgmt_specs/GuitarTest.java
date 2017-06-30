@@ -26,4 +26,9 @@ public class GuitarTest {
   public void testHasSize() {
     assertEquals("regular", guitar01.getSize());
   }
+
+  @Test
+  public void testHasBuyPrize() {
+    assertEquals(150, guitar01.getBuyPrice());
+  }
 }
