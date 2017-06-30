@@ -21,4 +21,9 @@ public class GuitarTest {
   public void testHasType() {
     assertEquals("semi-acoustic", guitar01.getType());
   }
+
+  @Test
+  public void testHasSize() {
+    assertEquals("regular", guitar01.getSize());
+  }
 }
