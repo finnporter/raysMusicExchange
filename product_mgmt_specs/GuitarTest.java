@@ -46,4 +46,9 @@ public class GuitarTest {
   public void testHasModel() {
     assertEquals("Archtop", guitar01.getModel());
   }
+
+  @Test
+  public void testHasNumberOfStrings() {
+    assertEquals(6, guitar01.getNumberOfStrings());
+  }
 }
