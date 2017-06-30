@@ -25,8 +25,7 @@ public class Product implements Sellable {
     return this.sellPrice;
   }
 
-
-  public double calculateMarkup(double buyPrice, double sellPrice) {
-    return 100 / (buyPrice * sellPrice);
+  public double calculateMarkup() {
+    return this.sellPrice - this.buyPrice;
   }
 }

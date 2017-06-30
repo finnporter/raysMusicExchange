@@ -26,4 +26,9 @@ public class ProductTest {
     assertEquals(10, product01.getSellPrice(), 0.01);
   }
 
+  @Test
+  public void testCanCalculateMarkup() {
+    assertEquals(4, product01.calculateMarkup(), 0.01);
+  }
+
 }
