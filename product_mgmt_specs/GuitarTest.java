@@ -16,4 +16,9 @@ public class GuitarTest {
   public void testHasColour() {
     assertEquals("Sunburst", guitar01.getColour());
   }
+
+  @Test
+  public void testHasType() {
+    assertEquals("semi-acoustic", guitar01.getType());
+  }
 }
