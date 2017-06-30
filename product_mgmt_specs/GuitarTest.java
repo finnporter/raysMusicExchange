@@ -53,7 +53,7 @@ public class GuitarTest {
   }
 
   @Test
-  public void testPlays() {
+  public void testCanPlay() {
     assertEquals("*guitar sounds*", guitar01.play());
   }
 }
