@@ -1,7 +1,7 @@
 package product_mgmt;
 import behaviours.*;
 
-public abstract class Instrument {
+public abstract class Instrument implements Playable, Sellable {
 
   String colour;
   String type; //woodwinds, brass,...
