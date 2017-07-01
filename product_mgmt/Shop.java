@@ -20,4 +20,8 @@ public class Shop {
     return this.stock.size();
   }
 
+  public void add(Sellable item) {
+    this.stock.add(item);
+  }
+
 }
