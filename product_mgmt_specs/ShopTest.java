@@ -42,5 +42,11 @@ public class ShopTest {
     assertEquals(2, shop.stockCount());
   }
 
-  
+  @Test
+  public void testTotalProfit() {
+    shop.add(product01);
+    shop.add(piano01);
+    shop.add(guitar01);
+    assertEquals(2153, shop.totalProfit(), 0.01);
+  }
 }
