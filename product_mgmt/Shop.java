@@ -24,4 +24,8 @@ public class Shop {
     this.stock.add(item);
   }
 
+  public void remove(Sellable item) {
+    this.stock.remove(item);
+  }
+
 }
