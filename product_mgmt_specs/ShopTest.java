@@ -13,8 +13,8 @@ public class ShopTest {
   public void before() {
     shop = new Shop("Ray's Music Exchange");
     product01 = new Product("guitar strings", 6, 10);
-    piano01 = new Piano("black", "grand piano", "grand", 10000, 12000, "Bösendorfer", "Grand Piano 170", 88);
-    guitar01 = new Guitar("Sunburst", "semi-acoustic", "regular", 150, 299, "Ibanez", "Archtop", 6);
+    piano01 = new Piano("black", InstrumentType.KEYBOARD, "grand", 10000, 12000, "Bösendorfer", "Grand Piano 170", 88);
+    guitar01 = new Guitar("Sunburst", InstrumentType.STRING, "regular", 150, 299, "Ibanez", "Archtop", 6);
   }
 
   @Test

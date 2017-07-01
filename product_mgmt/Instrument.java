@@ -4,14 +4,14 @@ import behaviours.*;
 public abstract class Instrument implements Playable, Sellable {
 
   String colour;
-  String type; //woodwinds, brass,...
+  InstrumentType type; //woodwinds, brass,...
   String size;
   int buyPrice;
   int sellPrice;
   String brand;
   String model;
 
-  public Instrument(String colour, String type, String size, int buyPrice, int sellPrice, String brand, String model) {
+  public Instrument(String colour, InstrumentType type, String size, int buyPrice, int sellPrice, String brand, String model) {
     this.colour = colour;
     this.type = type;
     this.size = size;
@@ -27,7 +27,7 @@ public abstract class Instrument implements Playable, Sellable {
     return this.colour;
   }
 
-  public String getType() {
+  public InstrumentType getType() {
     return this.type;
   }
 

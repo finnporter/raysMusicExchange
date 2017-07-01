@@ -8,7 +8,7 @@ public class PianoTest {
 
   @Before
   public void before() {
-    piano01 = new Piano("black", "grand piano", "grand", 10000, 12000, "Bösendorfer", "Grand Piano 170", 88);
+    piano01 = new Piano("black", InstrumentType.KEYBOARD, "grand", 10000, 12000, "Bösendorfer", "Grand Piano 170", 88);
     //String colour, String type, String size, Double buyPrice, Double sellPrice, String brand, String, model, int numberOfStrings
   }
 
@@ -19,7 +19,7 @@ public class PianoTest {
 
   @Test
   public void testHasType() {
-    assertEquals("grand piano", piano01.getType());
+    assertEquals(InstrumentType.KEYBOARD, piano01.getType());
   }
 
   @Test

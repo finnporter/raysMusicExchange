@@ -8,7 +8,7 @@ public class GuitarTest {
 
   @Before
   public void before() {
-    guitar01 = new Guitar("Sunburst", "semi-acoustic", "regular", 150, 299, "Ibanez", "Archtop", 6);
+    guitar01 = new Guitar("Sunburst", InstrumentType.STRING, "regular", 150, 299, "Ibanez", "Archtop", 6);
     //String colour, String type, String size, Double buyPrice, Double sellPrice, String brand, String, model, int numberOfStrings
   }
 
@@ -19,7 +19,7 @@ public class GuitarTest {
 
   @Test
   public void testHasType() {
-    assertEquals("semi-acoustic", guitar01.getType());
+    assertEquals(InstrumentType.STRING, guitar01.getType());
   }
 
   @Test
