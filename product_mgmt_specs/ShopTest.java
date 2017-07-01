@@ -41,4 +41,6 @@ public class ShopTest {
     shop.remove(product01);
     assertEquals(2, shop.stockCount());
   }
+
+  
 }
