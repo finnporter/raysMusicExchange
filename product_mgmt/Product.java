@@ -3,9 +3,9 @@ import behaviours.*;
 
 public class Product implements Sellable {
 
-  String type;
-  double buyPrice;
-  double sellPrice;
+  private String type;
+  private double buyPrice;
+  private double sellPrice;
 
   public Product(String type, double buyPrice, double sellPrice) {
     this.type = type;

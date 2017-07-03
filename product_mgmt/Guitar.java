@@ -3,7 +3,7 @@ import behaviours.*;
 
 public class Guitar extends Instrument {
 
-  int numberOfStrings;
+  private int numberOfStrings;
 
   public Guitar(String colour, InstrumentType type, String size, int buyPrice, int sellPrice, String brand, String model, int numberOfStrings) {
     super(colour, type, size, buyPrice, sellPrice, brand, model);
@@ -19,6 +19,6 @@ public class Guitar extends Instrument {
   }
 
   public double calculateMarkup() {
-    return sellPrice - buyPrice;
+    return this.sellPrice - this.buyPrice;
   }
 }

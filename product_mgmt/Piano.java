@@ -3,7 +3,7 @@ import behaviours.*;
 
 public class Piano extends Instrument {
 
-  int numberOfKeys;
+  private int numberOfKeys;
 
   public Piano(String colour, InstrumentType type, String size, int buyPrice, int sellPrice, String brand, String model, int numberOfKeys) {
     super(colour, type, size, buyPrice, sellPrice, brand, model);
@@ -19,6 +19,6 @@ public class Piano extends Instrument {
   }
 
   public double calculateMarkup() {
-    return sellPrice - buyPrice;
+    return this.sellPrice - this.buyPrice;
   }
 }

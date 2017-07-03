@@ -3,13 +3,13 @@ import behaviours.*;
 
 public abstract class Instrument implements Playable, Sellable {
 
-  String colour;
-  InstrumentType type; //woodwinds, brass,...
-  String size;
-  int buyPrice;
-  int sellPrice;
-  String brand;
-  String model;
+  protected String colour;
+  protected InstrumentType type;
+  protected String size;
+  protected int buyPrice;
+  protected int sellPrice;
+  protected String brand;
+  protected String model;
 
   public Instrument(String colour, InstrumentType type, String size, int buyPrice, int sellPrice, String brand, String model) {
     this.colour = colour;

@@ -1,20 +1,17 @@
 import static org.junit.Assert.*;
 import org.junit.*;
 import product_mgmt.*;
+import behaviours.*;
 
 public class ShopTest {
 
   Shop shop;
-  Product product01;
-  Piano piano01;
-  Guitar guitar01;
+  Sellable item;
 
   @Before
   public void before() {
     shop = new Shop("Ray's Music Exchange");
-    product01 = new Product("guitar strings", 6, 10);
-    piano01 = new Piano("black", InstrumentType.KEYBOARD, "grand", 10000, 12000, "Bösendorfer", "Grand Piano 170", 88);
-    guitar01 = new Guitar("Sunburst", InstrumentType.STRING, "regular", 150, 299, "Ibanez", "Archtop", 6);
+    item = new Piano("black", InstrumentType.KEYBOARD, "grand", 10000, 12000, "Bösendorfer", "Grand Piano 170", 88);
   }
 
   @Test
@@ -29,24 +26,20 @@ public class ShopTest {
 
   @Test
   public void testShopCanAddStock() {
-    shop.add(product01);
+    shop.add(item);
     assertEquals(1, shop.stockCount());
   }
 
   @Test
   public void testShopCanRemoveStock() {
-    shop.add(product01);
-    shop.add(piano01);
-    shop.add(guitar01);
-    shop.remove(product01);
-    assertEquals(2, shop.stockCount());
+    shop.add(item);
+    shop.remove(item);
+    assertEquals(0, shop.stockCount());
   }
 
   @Test
   public void testTotalProfit() {
-    shop.add(product01);
-    shop.add(piano01);
-    shop.add(guitar01);
-    assertEquals(2153, shop.totalProfit(), 0.01);
+    shop.add(item);
+    assertEquals(2000, shop.totalProfit(), 0.01);
   }
 }
